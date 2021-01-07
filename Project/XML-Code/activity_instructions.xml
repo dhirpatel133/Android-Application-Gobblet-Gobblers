@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?><!--A relative layout created to hold the background picture-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--Imageview created to place the background image-->
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="center"
+        android:src="@drawable/settingbckg" />
+    <!--This linear layout holds the scrollview-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp">
+        <!--A scrollview is added to fit in more information on the screen
+         by enabling scrolling-->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--A linear layout added inside the scrollview to view the information
+            in a vertical orientation (linear layout is oriented vertically)-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!--This textview places the title "Instructions" on the screen-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:text="Instructions"
+                    android:textColor="#FFFFFF"
+                    android:textSize="50sp"
+                    android:textStyle="bold" />
+                <!--This imageview places the horizontal white line under the title
+                 "Instructions"-->
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/line" />
+                <!--This textview places the subtitle "Rules" on the screen-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Rules:"
+                    android:textColor="#8fe38f"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+                <!--This textview places the information about rules on the screen-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:text="In this version of tic tac toe,
+each player is given three pieces."
+                    android:textColor="#FFFFFF"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+                <!--Linear layout created to hold the pictures of the three pieces
+                 (Shovel, Axe, and Sword)-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+                    <!--places the shovel icon on the screen-->
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="40dp"
+                        android:src="@drawable/dshovel" />
+                    <!--places the axe icon on the screen-->
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="40dp"
+                        android:src="@drawable/daxe" />
+                    <!--places the sword icon on the screen-->
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/dsword" />
+                </LinearLayout>
+                <!--This linear layout is horizontally oriented and holds three textviews.
+                 This layout holds the words "Shovel", "Axe" and "Sword"-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <!--Textview places the word "shovel" on the screen -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="83dp"
+                        android:text="Shovel"
+                        android:textColor="#FFFFFF"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+                    <!--Textview places the word "axe" on the screen -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="35dp"
+                        android:text="Axe"
+                        android:textColor="#FFFFFF"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+                    <!--Textview places the word "sword" on the screen -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="37dp"
+                        android:text="Sword"
+                        android:textColor="#FFFFFF"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <!--This textview places the information about hierarchy on the screen-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Played on a hierarchical concept.
+A higher piece can go on top of a lower piece but not vice versa."
+                    android:textColor="#FFFFFF"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+                <!--Linearlayout created to hold the three icons of different pieces
+                 for explaining hierarchy-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+                    <!--Textview places the word "Hierarchy" pn the screen-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:text="Hierarchy:"
+                        android:textColor="#FFFFFF"
+                        android:textSize="23sp"
+                        android:textStyle="bold" />
+                    <!--places the shovel icon on the screen-->
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/gshovel" />
+                    <!--places the arrow on the screen-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:text="->"
+                        android:textColor="#FFFFFF"
+                        android:textSize="35sp"
+                        android:textStyle="bold" />
+                    <!--places the axe icon on the screen-->
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/gaxe" />
+                    <!--places the arrow on the screen-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:text="->"
+                        android:textColor="#FFFFFF"
+                        android:textSize="35sp"
+                        android:textStyle="bold" />
+                    <!--places the sword icon on the screen-->
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/gsword" />
+                </LinearLayout>
+                <!--Places the subtitle "Player's Turn" on the screen-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Player's Turn:"
+                    android:textColor="#8fe38f"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+                <!--A horizontally oriented linear layout created to hold and explain
+                 information about the player's turn-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <!--Places the phrase "On top of Screen" on the instruction screen-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="7dp"
+                        android:text="On top of screen:"
+                        android:textColor="#FFFFFF"
+                        android:textSize="23sp"
+                        android:textStyle="bold" />
+                    <!--Places the current turn snippet on the instruction screen as a
+                     visual aid-->
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="58dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/currentturn" />
+                </LinearLayout>
+                <!--Places the subtitle "Win Condition" on the screen-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Win Condition:"
+                    android:textColor="#8fe38f"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+                <!--Textview created to place the instructions for the win condition
+                on the screen-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:text="First to get 3 of their 'colour'
+in a row win! Only colour matters, not pieces.  "
+                    android:textColor="#FFFFFF"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+                <!--Textview created to place the the text: "Diamond winning" on the
+                screen-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="6dp"
+                    android:text="Ex.'Diamond' winning:"
+                    android:textColor="#FFFFFF"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+                <!--Linear layout created to hold three images in a horizontal formation-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <!--First game screenshot is placed  -->
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/vert" />
+                    <!--Second game screenshot is placed  -->
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/diagonal" />
+                    <!--Third game screenshot is placed  -->
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/horiz" />
+                </LinearLayout>
+                <!--Places the subtitle "Placement & Restriction" on the screen-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Placement &amp; Restriction:"
+                    android:textColor="#8fe38f"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+                <!--Explains the rules for for placing pieces on the board
+                 and also the restrictions of the placement-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="To make the game more challenging
+you cannot have more than two of the same piece on the board.
+This Inhibits the player from using the sword piece (most powerful) every time."
+                    android:textColor="#FFFFFF"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+                <!--Explains the rules for for placing pieces on the board
+                 and also the restrictions of the placement-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="To place a piece on the board,
+select the correct coloured piece from the bottom of the screen"
+                    android:textColor="#FFFFFF"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+                <!-- Places snippet of a screeshot of the game screen(Visual aid)-->
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="7dp"
+                    android:src="@drawable/select" />
+                <!--More rules about selecting a piece-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:text="If a piece of your colour is not
+highlighted during your turn, it means that you cannot select
+that piece."
+                    android:textColor="#FFFFFF"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+                <!--Linear layout created to hold contents in a horizontal orientation-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <!--Texview created to place the text: "Highlighted"-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Highlighted:"
+                        android:textColor="#FFFFFF"
+                        android:textSize="23sp"
+                        android:textStyle="bold" />
+                    <!--Imageview places the highlighted shovel icon-->
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="7dp"
+                        android:src="@drawable/dshovel" />
+                    <!--Imageview places the highlighted axe icon-->
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="7dp"
+                        android:src="@drawable/daxe" />
+                    <!--Imageview places the highlighted sword icon-->
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="7dp"
+                        android:src="@drawable/dsword" />
+                </LinearLayout>
+                <!--Linear layout created to hold contents in a horizontal orientation-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+                    <!--Texview created to place the text: "Highlighted"-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Not Highlighted:"
+                        android:textColor="#FFFFFF"
+                        android:textSize="23sp"
+                        android:textStyle="bold" />
+                    <!--Imageview places the non-highlighted shovel icon-->
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginTop="7dp"
+                        android:src="@drawable/ishovel" />
+                    <!--Imageview places the non-highlighted axe icon-->
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="7dp"
+                        android:src="@drawable/iaxe" />
+                    <!--Imageview places the non-highlighted sword icon-->
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="7dp"
+                        android:src="@drawable/isword" />
+                </LinearLayout>
+                <!--Linear layout created to hold contents in a horizontal orientation-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <!--This textview places the subtitle "Advanced Settings" on the screen-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="Advanced Settings"
+                        android:textColor="#8fe38f"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+                    <!--This imageview places the setting icon on the screen for visual
+                    purposes-->
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/settingicon" />
+                </LinearLayout>
+                <!--Textview created to place information about settings on the instruction
+                 screen-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:text="To customize the game screen, click on
+the settings icon located at the top right corner of the game screen. You will only be
+able to customize the settings for the 2 players mode."
+                    android:textColor="#FFFFFF"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+                    <!--This textview places the subtitle "Home Button" on the screen-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="Home Button"
+                        android:textColor="#8fe38f"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+                    <!--This imageview places the back icon on the screen for visual
+                    purposes-->
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:src="@drawable/back" />
+                </LinearLayout>
+                <!--Textview created to place information about the 1 player and 2 players game play-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="6dp"
+                    android:text="This game can be played with 1 player or 2 players. You can
+choose this on the home screen. To go back to the home screen, press the back button at
+the top left corner of the game screen."
+                    android:textColor="#FFFFFF"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+                <!--Button created (when clicked upon it will change the screen to the
+                game screen-->
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="18dp"
+                    android:background="#555555"
+                    android:onClick="togamescreen"
+                    android:padding="8dp"
+                    android:text="Play Game"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?><!--A relativelayout created to hold a background image-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--This imageview places the background picture of the game screen-->
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="center"
+        android:src="@drawable/gbackground" />
+    <!--A linearlayout created to place text and the current turn image-->
+    <!--The linearlayout is vertically orientated-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--This linearlayout oriented horizontally and it will horizontally
+            orient the text and the turn picture-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="13dp">
+            <!--This imageview places the back symbol on the top left corner of the screen -->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="home"
+                android:src="@drawable/back" />
+            <!--This textview holds the text "current turn"-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="41dp"
+                android:padding="5dp"
+                android:text="Current Turn:"
+                android:textColor="#FFFFFF"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+            <!--This imageview places the turn symbol on the screen-->
+            <ImageView
+                android:id="@+id/turn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:src="@drawable/dturn" />
+        </LinearLayout>
+        <!--A gridlayout is created to place the main game grid on
+        the screen. It is a 3x3 grid-->
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:columnCount="3"
+            android:rowCount="3">
+            <!--This imageview is in the position [0][0] of the grid-->
+            <ImageView
+                android:id="@+id/a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:onClick="aClick"
+                android:src="@drawable/chest" />
+            <!--This imageview is in the position [0][1] of the grid-->
+            <ImageView
+                android:id="@+id/b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:onClick="bClick"
+                android:src="@drawable/chest" />
+            <!--This imageview is in the position [0][2] of the grid-->
+            <ImageView
+                android:id="@+id/c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:onClick="cClick"
+                android:src="@drawable/chest" />
+            <!--This imageview is in the position [1][0] of the grid-->
+            <ImageView
+                android:id="@+id/d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:onClick="dClick"
+                android:src="@drawable/chest" />
+            <!--This imageview is in the position [1][1] of the grid-->
+            <ImageView
+                android:id="@+id/e"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:onClick="eClick"
+                android:src="@drawable/chest" />
+            <!--This imageview is in the position [1][2] of the grid-->
+            <ImageView
+                android:id="@+id/f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:onClick="fClick"
+                android:src="@drawable/chest" />
+            <!--This imageview is in the position [2][0] of the grid-->
+            <ImageView
+                android:id="@+id/g"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:onClick="gClick"
+                android:src="@drawable/chest" />
+            <!--This imageview is in the position [2][1] of the grid-->
+            <ImageView
+                android:id="@+id/h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:onClick="hClick"
+                android:src="@drawable/chest" />
+            <!--This imageview is in the position [2][2] of the grid-->
+            <ImageView
+                android:id="@+id/i"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:onClick="iClick"
+                android:src="@drawable/chest" />
+        </GridLayout>
+        <!--A linearlayout created to hold two buttons - "Reset" and "Instructions"-->
+        <!--The linearlayout is oriented horizontally-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp">
+            <!--This places the "Reset" button on the game screen-->
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:background="#555555"
+                android:onClick="reset"
+                android:padding="8dp"
+                android:text="Reset"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <!--This places the "Instructions" button on the game screen-->
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:background="#555555"
+                android:onClick="toinstructions"
+                android:padding="8dp"
+                android:text="Instructions"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <!--This places the "Rate Us" button on the game screen-->
+            <Button
+                android:id="@+id/rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#555555"
+                android:onClick="toinstructions"
+                android:padding="8dp"
+                android:text="Rate Us"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <!--A linearlayout created to hold 6 other buttons-->
+        <!--These 6 buttons will provide piece choices for the player to select-->
+        <!--The linearlayout is horizontally oriented-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+            <!--This places the "diamond shovel" button on the game screen-->
+            <ImageView
+                android:id="@+id/d1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="shvl1"
+                android:src="@drawable/dshovel" />
+            <!--This places the "diamond axe" button on the game screen-->
+            <ImageView
+                android:id="@+id/d2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:onClick="axe1"
+                android:src="@drawable/daxe" />
+            <!--This places the "diamond sword" button on the game screen-->
+            <ImageView
+                android:id="@+id/d3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:onClick="swrd1"
+                android:src="@drawable/dsword" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

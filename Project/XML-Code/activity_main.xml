@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?><!--A relative layout created to hold the background picture-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--Imageview created to place the background image-->
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="center"
+        android:src="@drawable/splashpicture" />
+    <!--This linear layout holds all of the contents of the screen, except for the
+       background picture-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--This imageview places the "Minecraft" title on the screen-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/title" />
+        <!--This imageview places the "Tic Tac Toe" title on the screen-->
+        <ImageView
+            android:layout_width="308dp"
+            android:layout_height="71dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/title4" />
+        <!--This linear layout holds only one widget - the "Play Game" button-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_marginTop="358dp">
+            <!--This widget places the "1-Player" button on the screen-->
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#555555"
+                android:onClick="togameAI"
+                android:padding="10dp"
+                android:text="1 Player"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+            <!--This widget places the "2-Players" button on the screen-->
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#555555"
+                android:onClick="togame"
+                android:padding="10dp"
+                android:text="2 Players"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
